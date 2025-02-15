@@ -1,15 +1,16 @@
 $('#change-color').on('click', function() {
-    $(this).css('color', 'red');
+    $('#target').css('color', 'red');
 });
 
 $('#change-text').on('click', function() {
-    $(this).text('変わりました');
+    $('#target').text('変わりました');
 });
 
 $('#fade-out').on('click', function() {
-    $(this).fadeOut();
+    $('#target').fadeOut();
 });
 
 $('#fade-in').on('click', function() {
+    $('#target').css('display', 'none');
     $('#target').fadeIn();
 });
